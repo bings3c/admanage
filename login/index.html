@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>北京电信广告管家</title>
+<meta charset="utf-8">
+<meta name="author" content="caohaitao">
+<meta name="keywords" content="北京电信，广告，管理">
+<meta name="description" content="北京电信广告管理平台">
+<script type="text/javascript" src="../include/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../include/bootstrap.min.js"></script>
+<script type="text/javascript" src="./md5.js"></script>
+<link rel="stylesheet" type="text/css" href="../include/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./login.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top navbar" style="height:75px;background-color:#ffffff">
+  <div class="container" style="height:75px">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div style="height:75px;float:left"><img src="img/logo.jpg" style="height:75px" /></div>
+    <div class="navbar-header" style="height:75px;margin-left:30px">
+      <a class="navbar-brand" href="#" style="height:75px;line-height:40px;font-size:30px;font-family:Microsoft yahei">北京电信广告管家</a>
+    </div>
+    <div style="height:75px;width:10%;float:right">
+    <a class="navbar-brand" href="#" data-toggle="modal" data-target="#about" style="height:75px;line-height:40px;font-size:20px;font-family:Microsoft yahei">
+    关于我们</a>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!----------------------------------轮播------------------------------------------------------>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" style="margin-top:60px" role="listbox">
+	    <div class="item active">
+	      <img src="img/float1.jpg" style="width:100%" alt="float1">
+	      
+	    </div>
+	    <div class="item">
+	      <img src="img/float2.jpg" style="width:100%" alt="float2">
+	      
+	    </div>
+	     <div class="item">
+	      <img src="img/float3.jpg" style="width:100%" alt="float3">
+	     
+	    </div>
+	    
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">上一页</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">下一页</span>
+  </a>
+</div>
+<!--------------------------------------轮播end-------------------------------------------->
+
+<!--登录-->
+<div class="container">
+  <div class="loginBox row" style="margin-left:150px;margin-top:-50px">
+  		<h2 class="text-left">登录</h2>
+		  <div class="form-group has-success">
+		      用户名：<input id="user" type="text" class="form-control" name="nick_name" placeholder="用户名" value="">
+		  </div>
+		  <div class="form-group has-success">
+		      密码：<input id="password" type="password" class="form-control" name="user_password" placeholder="密码">
+		  </div>
+		 <p id="con" style="width:100%;height:30px;background:#F5F5F5"></p>
+
+		  <div style="float:right;width:70px">
+		      	<button id="login" class="btn btn-info" type="button">登 录</button>
+		  </div>
+	</div>
+</div>
+<script type="text/javascript" src="./login.js"></script>  
+
+<!--栅格布局begin-->
+<div class="container" id="summary-container" style="margin-top:220px">
+	
+	<hr class="divider">
+	<footer>
+		<p>&copy;2015. 中国电信北京分公司 京ICP证XXXXX号</p>
+	</footer>
+</div>
+
+<!--模态窗口平台介绍-->
+<div class="modal fade" id="about">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Close</span></button>
+        <h4 class="modal-title">关于我们</h4>
+      </div>
+      <div class="modal-body">
+        <p>北京电信广告管理平台是一个。。。。&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">已了解</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+</body>
+</html>
